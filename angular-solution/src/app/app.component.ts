@@ -13,9 +13,6 @@ export class AppComponent implements OnInit{
   }
 
   setArrayPrintValue(){
-    const array = Array.from(Array(101).keys())
-    this.arrayPrintValue = array.toString()
+    this.arrayPrintValue = Array.from(Array(100).keys()).map((item) => item + 1).toString()
   }
-
-
 }

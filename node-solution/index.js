@@ -1,5 +1,5 @@
-function printArray(){
-    const array = Array.from(Array(101).keys())
-   return  array.toString()
+function printArray() {
+    return Array.from(Array(100).keys()).map((item) => item + 1).toString()
 }
+
 console.log(printArray())
